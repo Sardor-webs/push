@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wr{
+    margin: 50px 180px;
+}
+
+
+input[type="checkbox"]{
+    width: 40px;
+    height: 40px;
+    background-color: silver;
+    display: block;
+    appearance: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+input[type="checkbox"]::after{
+content: "\2713";
+font-size: 40px;
+position: absolute;
+display: none;
+
+}
+input[type="checkbox"]:hover{
+    background-color: aqua;
+}
+
+input[type="checkbox"]:checked::after{
+    display: block;
+    font-size: 40px;
+    position: absolute;
+}
